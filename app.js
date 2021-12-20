@@ -53,9 +53,6 @@ app.use(vendorRoutes);
 app.use(commentRoutes);
 
 //Route for logout
-
-
-
 app.get("/logout", function (req, res) {
     req.logout();
     req.flash("success", "Logged you out!");
